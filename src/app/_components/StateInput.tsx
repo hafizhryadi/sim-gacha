@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState } from "react"
@@ -15,7 +14,7 @@ B	36	28.570%
 A	44	34.920%`
 
 const StateInput = () => {
-    const [state] = useState<any>(prob)
+    const [state] = useState<string>(prob)
     const [draw, setDraw] = useState<boolean>(false)
 
     return (
